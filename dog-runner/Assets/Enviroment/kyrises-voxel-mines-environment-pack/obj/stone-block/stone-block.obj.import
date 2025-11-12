@@ -1,0 +1,25 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://ds24iw81fgpud"
+path="res://.godot/imported/stone-block.obj-80428c4808a9bd9bb4552e91de2a0629.mesh"
+
+[deps]
+
+files=["res://.godot/imported/stone-block.obj-80428c4808a9bd9bb4552e91de2a0629.mesh"]
+
+source_file="res://Assets/Enviroment/kyrises-voxel-mines-environment-pack/obj/stone-block/stone-block.obj"
+dest_files=["res://.godot/imported/stone-block.obj-80428c4808a9bd9bb4552e91de2a0629.mesh", "res://.godot/imported/stone-block.obj-80428c4808a9bd9bb4552e91de2a0629.mesh"]
+
+[params]
+
+generate_tangents=true
+generate_lods=true
+generate_shadow_mesh=true
+generate_lightmap_uv2=false
+generate_lightmap_uv2_texel_size=0.2
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+force_disable_mesh_compression=false

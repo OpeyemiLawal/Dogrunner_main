@@ -1,0 +1,25 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://yei5bdpbg2aa"
+path="res://.godot/imported/door-wide-closed.obj-bcb01ee77ed1d1b320af40df3f3c3046.mesh"
+
+[deps]
+
+files=["res://.godot/imported/door-wide-closed.obj-bcb01ee77ed1d1b320af40df3f3c3046.mesh"]
+
+source_file="res://Assets/Enviroment/kenney_conveyor-kit/Models/OBJ format/door-wide-closed.obj"
+dest_files=["res://.godot/imported/door-wide-closed.obj-bcb01ee77ed1d1b320af40df3f3c3046.mesh", "res://.godot/imported/door-wide-closed.obj-bcb01ee77ed1d1b320af40df3f3c3046.mesh"]
+
+[params]
+
+generate_tangents=true
+generate_lods=true
+generate_shadow_mesh=true
+generate_lightmap_uv2=false
+generate_lightmap_uv2_texel_size=0.2
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+force_disable_mesh_compression=false

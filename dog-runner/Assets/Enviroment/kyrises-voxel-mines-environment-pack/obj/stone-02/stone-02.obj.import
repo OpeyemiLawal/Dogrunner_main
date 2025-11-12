@@ -1,0 +1,25 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://bodhycuft8ur0"
+path="res://.godot/imported/stone-02.obj-06507876608a6c453a56f471ceae4c29.mesh"
+
+[deps]
+
+files=["res://.godot/imported/stone-02.obj-06507876608a6c453a56f471ceae4c29.mesh"]
+
+source_file="res://Assets/Enviroment/kyrises-voxel-mines-environment-pack/obj/stone-02/stone-02.obj"
+dest_files=["res://.godot/imported/stone-02.obj-06507876608a6c453a56f471ceae4c29.mesh", "res://.godot/imported/stone-02.obj-06507876608a6c453a56f471ceae4c29.mesh"]
+
+[params]
+
+generate_tangents=true
+generate_lods=true
+generate_shadow_mesh=true
+generate_lightmap_uv2=false
+generate_lightmap_uv2_texel_size=0.2
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+force_disable_mesh_compression=false

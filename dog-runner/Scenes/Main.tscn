@@ -1,0 +1,65 @@
+[gd_scene load_steps=4 format=3 uid="uid://cppo12k7npkhy"]
+
+[ext_resource type="Script" uid="uid://cu0gmmv1eprar" path="res://Scripts/GameManager.gd" id="1_main"]
+[ext_resource type="PackedScene" uid="uid://p0yomltie1ir" path="res://Scenes/dog.tscn" id="2_idj7w"]
+
+[sub_resource type="Environment" id="Environment_1"]
+background_mode = 1
+background_color = Color(0.2, 0.25, 0.3, 1)
+ambient_light_source = 2
+ambient_light_color = Color(0.4, 0.45, 0.5, 1)
+ambient_light_energy = 0.8
+
+[node name="Main" type="Node3D"]
+script = ExtResource("1_main")
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_1")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(0.866025, -0.433013, 0.25, 0, 0.5, 0.866025, -0.5, -0.75, 0.433013, 0, 10, 0)
+light_color = Color(1, 0.98, 0.95, 1)
+shadow_enabled = true
+shadow_opacity = 0.5
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.866025, 0.5, 0, -0.5, 0.866025, 0, 9, -12)
+
+[node name="Environment" type="Node3D" parent="."]
+
+[node name="LevelSegments" type="Node3D" parent="Environment"]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="HUD" type="Control" parent="CanvasLayer"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="HUD#HealthContainer" type="HBoxContainer" parent="."]
+anchors_preset = -1
+anchor_left = 0.02
+anchor_top = 0.02
+anchor_right = 0.02
+anchor_bottom = 0.02
+offset_left = 20.0
+offset_top = 20.0
+offset_right = 220.0
+offset_bottom = 60.0
+theme_override_constants/separation = 5
+
+[node name="HealthContainer#HealthIcon" type="TextureRect" parent="."]
+custom_minimum_size = Vector2(32, 32)
+size_flags_vertical = 4
+expand_mode = 1
+
+[node name="HealthContainer#HealthLabel" type="Label" parent="."]
+theme_override_font_sizes/font_size = 24
+text = "❤️ 10/10"
+vertical_alignment = 1
+
+[node name="player" parent="." instance=ExtResource("2_idj7w")]
+transform = Transform3D(2.2, 0, 0, 0, 2.2, 0, 0, 0, 2.2, 0, 0, 0)

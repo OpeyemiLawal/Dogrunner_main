@@ -1,0 +1,25 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://bdr4g0d7uworj"
+path="res://.godot/imported/gold-block.obj-b85b4ccadad7c1d2398dc9978d02877e.mesh"
+
+[deps]
+
+files=["res://.godot/imported/gold-block.obj-b85b4ccadad7c1d2398dc9978d02877e.mesh"]
+
+source_file="res://Assets/Enviroment/kyrises-voxel-mines-environment-pack/obj/gold-block/gold-block.obj"
+dest_files=["res://.godot/imported/gold-block.obj-b85b4ccadad7c1d2398dc9978d02877e.mesh", "res://.godot/imported/gold-block.obj-b85b4ccadad7c1d2398dc9978d02877e.mesh"]
+
+[params]
+
+generate_tangents=true
+generate_lods=true
+generate_shadow_mesh=true
+generate_lightmap_uv2=false
+generate_lightmap_uv2_texel_size=0.2
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+force_disable_mesh_compression=false

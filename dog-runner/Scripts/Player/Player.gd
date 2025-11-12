@@ -46,6 +46,19 @@ func _ready():
 	if position.y < 1.5:
 		position.y = 1.5
 
+func _input(event):
+	if event is InputEventScreenTouch:
+		if event.pressed:
+			touch_start_pos = event.position
+			touch_start_time = Time.get_ticks_msec() / 1000.0
+			is_swiping = true
+		else:
+			if is_swiping:
+				var touch_end_pos = event.position
+				var touch_duration = (Time.get_ticks_msec() / 1000.0) - touch_start_time
+				detect_swipe_or_tap(touch_start_pos, touch_end_pos, touch_duration)
+				is_swiping = false
+
 func _physics_process(delta):
 	# Get forward speed from game manager
 	var game_manager = get_parent()
@@ -90,18 +103,6 @@ func _physics_process(delta):
 	handle_input()
 
 func handle_input():
-	# Touch/Mouse input for swipe detection
-	#if Input.is_action_just_pressed("ui_touch"):
-		#touch_start_pos = get_viewport().get_mouse_position()
-		#touch_start_time = Time.get_ticks_msec() / 1000.0
-		#is_swiping = true
-	#
-	#if Input.is_action_just_released("ui_touch") and is_swiping:
-		#var touch_end_pos = get_viewport().get_mouse_position()
-		#var touch_duration = (Time.get_ticks_msec() / 1000.0) - touch_start_time
-		#detect_swipe_or_tap(touch_start_pos, touch_end_pos, touch_duration)
-		#is_swiping = false
-	
 	# Keyboard controls for testing
 	if Input.is_action_just_pressed("ui_right"):
 		move_left()
